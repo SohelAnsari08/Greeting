@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Card for Parth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --sky-blue: #e0f2fe;
+            --lavender: #f3e8ff;
+            --warm-yellow: #fef9c3;
+            --soft-pink: #fce7f3;
+            --gold: #d4af37;
+        }
+
+        body {
+            background: linear-gradient(135deg, #e0f2fe 0%, #f3e8ff 50%, #fce7f3 100%);
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* The Card Container */
+        .card-container {
+            width: 100%;
+            max-width: 800px; /* A4 Ratio Friendly */
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 40px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1), inset 0 0 20px rgba(255, 255, 255, 0.5);
+            padding: 60px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        /* Decorative Floating Elements */
+        .doodle { position: absolute; z-index: 0; opacity: 0.7; pointer-events: none; filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.1)); }
+        .star { top: 5%; left: 5%; font-size: 30px; animation: blink 2s infinite; }
+        .heart { bottom: 10%; right: 5%; font-size: 35px; color: #f472b6; animation: float 4s ease-in-out infinite; }
+        .balloon { top: 15%; right: 8%; font-size: 50px; animation: float 5s ease-in-out infinite; }
+        .plane { bottom: 20%; left: 5%; font-size: 40px; transform: rotate(-15deg); }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        .handwritten {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .premium-border {
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            background: rgba(255, 255, 255, 0.6);
+            padding: 40px;
+            border-radius: 30px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .cake-container {
+            font-size: 80px;
+            margin: 20px 0;
+            filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+            display: inline-block;
+            animation: scaleUp 1s ease-out;
+        }
+
+        @keyframes scaleUp {
+            0% { transform: scale(0); }
+            100% { transform: scale(1); }
+        }
+
+        .gold-text {
+            background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+
+        .message-body {
+            line-height: 1.8;
+            color: #4a4a4a;
+            font-size: 1.05rem;
+            text-align: justify;
+            hyphens: auto;
+        }
+
+        .quote-box {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(0,0,0,0.05);
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #718096;
+        }
+
+        /* High-Five Illustration Simulation */
+        .friendship-icon {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <!-- Floating Decorations -->
+        <div class="doodle star">✨</div>
+        <div class="doodle star" style="top: 80%; left: 15%;">✨</div>
+        <div class="doodle heart">❤️</div>
+        <div class="doodle heart" style="top: 10%; right: 20%; font-size: 20px;">💖</div>
+        <div class="doodle balloon">🎈</div>
+        <div class="doodle plane">✈️</div>
+        <div class="doodle" style="top: 40%; left: -20px; font-size: 60px;">☁️</div>
+        <div class="doodle" style="top: 5%; right: 40%; font-size: 30px;">🎁</div>
+
+        <div class="premium-border">
+            <!-- Front Header -->
+            <header>
+                <h1 class="handwritten text-6xl text-blue-600 mb-2">🎉 Happy Birthday, Parth! 🎂</h1>
+                <p class="text-gray-600 font-medium italic mb-6">
+                    To my best friend, my brother, and one of the most important people in my life.
+                </p>
+            </header>
+
+            <!-- 3D Style Hero Section -->
+            <div class="cake-container">
+                <span style="position: relative;">
+                    🎂
+                    <span style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); font-size: 20px; animation: blink 1s infinite;">🔥</span>
+                </span>
+            </div>
+
+            <!-- Main Greeting -->
+            <main class="mt-8">
+                <h2 class="handwritten text-4xl text-pink-500 mb-6 text-center">Happy Birthday ❤️</h2>
+                
+                <div class="message-body space-y-4">
+                    <p class="font-semibold">Dear Parth,</p>
+                    <p>
+                        Happy Birthday, brother! Today is all about celebrating the incredible person you are. 
+                        Thank you for always standing beside me through every laugh, every challenge, and every unforgettable memory. 
+                        You are much more than just a friend—you are family.
+                    </p>
+                    <p>
+                        I wish you endless happiness, good health, success, peace, and countless reasons to smile in the coming year. 
+                        May every dream you chase become a reality, and may every step you take lead you toward something wonderful.
+                    </p>
+                    <p>
+                        If I have ever hurt you, misunderstood you, or failed to be there when you needed me, I sincerely apologize. 
+                        Thank you for accepting me despite my imperfections. I never want to lose a brother like you.
+                    </p>
+                    <p>
+                        You are one of the rarest people I've ever met—kind, caring, supportive, and genuine. 
+                        Thank you for every memory, every laugh, every conversation, and every moment we've shared.
+                        I hope our friendship lasts forever.
+                    </p>
+                    <p>
+                        No matter where life takes us, you'll always have a special place in my heart.
+                        May this year become the best chapter of your life.
+                    </p>
+                </div>
+
+                <div class="mt-10">
+                    <div class="friendship-icon">🙌</div>
+                    <p class="handwritten text-3xl text-blue-500">With love,</p>
+                    <p class="font-bold text-xl gold-text">Your Forever Brother ❤️</p>
+                </div>
+
+                <div class="quote-box">
+                    <p>"True friendship isn't measured by time; it's measured by the memories, trust, and love shared along the way."</p>
+                </div>
+            </main>
+
+            <footer class="mt-8 opacity-50 text-xs">
+                Made with lots of love ❤️
+            </footer>
+        </div>
+    </div>
+
+    <!-- Background Confetti Sparkles -->
+    <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: -1;">
+        <div class="doodle" style="top: 15%; left: 20%;">✨</div>
+        <div class="doodle" style="top: 60%; right: 15%;">⭐</div>
+        <div class="doodle" style="top: 85%; left: 40%;">✨</div>
+    </div>
+
+</body>
+</html>
